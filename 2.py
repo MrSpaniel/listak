@@ -11,9 +11,11 @@ for i in range(10):
 print(randomszamok)
 
 felhasznalo = int(input('Írj be egy sámot 1 és 3 között:'))
+if felhasznalo > 3 or felhasznalo < 1:
+    print('Rosszul adtad meg a számot!')
+    quit( print('A Task Véget Ért!'))
 while felhasznalo in randomszamok:
     randomszamok.remove(felhasznalo)
 print(randomszamok)
-
 # felhasznalo = input('Írj be egy számot 1 és 3 között:')
 # print(randomszam.remove(felhasznalo))
